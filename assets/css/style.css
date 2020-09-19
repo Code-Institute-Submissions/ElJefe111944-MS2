@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Pathway+Gothic+One&display=swap');
 
 *{
   margin: 0;
@@ -12,26 +12,59 @@ body {
 
 header {
     font-family: 'Open Sans', sans-serif;
+background: #333333;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: auto;
+    padding: 48px;
+    width: 100%;
 }
 
 nav {
  position: fixed;
  top: 20px;
- left: 20px;
+ right: 20px;
 }
 
 nav a {
   color: #fafafa;   
  text-decoration: none;  
- display: inline-block 
+ display: inline-block;
+ 
+}
+
+.logo {
+    color: #fafafa;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 40px;
 }
 
 .container {
-    width: 95%;
-    max-width: 1200px;
+    width: 95% !important;
+    max-width: 1200px !important;
     display: flex;
     align-items: center;
     margin: auto;
+    justify-content: space-around;
+    color: #fafafa;
+}
+
+.img1 {
+    object-fit: cover;
+    display: block;
+    height: 450px;
+    width: 30%;
+}
+.landing-text {
+    text-align: center;
+    width: 50%;
+} 
+.landing-text h2 {
+   font-size: 60px; 
+}
+
+.landing-text h2 {
+   font-size: 40px; 
 }
 
 h1 {
