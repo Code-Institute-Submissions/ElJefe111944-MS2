@@ -6,12 +6,12 @@
   box-sizing: border-box;
 }
 body {
-    overflow: hidden;
+    
     font-family: 'Open Sans', sans-serif;
 }
 
 header {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pathway Gothic One', sans-serif;
 background: #333333;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -36,7 +36,7 @@ nav a {
 .logo {
     color: #fafafa;
     font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .container {
@@ -60,13 +60,31 @@ nav a {
     width: 50%;
 } 
 .landing-text h2 {
-   font-size: 60px; 
+   font-size: 70px; 
 }
 
 .landing-text h2 {
-   font-size: 40px; 
+   font-size: 50px; 
 }
 
-h1 {
-    font-family: 'Carrois Gothic SC', sans-serif;
+.landing-text a {
+    display: inline-block;
+    color: #fafafa;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #fafafa;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding:  10px 0px;
+}
+
+.wave {
+    height: 100px;
+    width: 100%;
+    background: #333333;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
