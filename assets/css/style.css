@@ -92,23 +92,24 @@ nav a {
     object-fit: cover;
     display: block;
     height: 450px;
-    width: 22%;
+    width: 30%;
     animation: up 1s ease-in;
 }
 
 /*---Text at centre left of page ---*/
 .landing-text {
     text-align: center;
-    width: 50%;
 } 
 .landing-text h2 {
-   font-size: 50px; 
+   font-size: 40px; 
    animation: left 1s ease-in;
+   font-family: 'Open Sans', sans-serif;
 }
 
 .landing-text h4 {
-   font-size: 30px; 
+   font-size: 25px; 
     animation: left 1s ease-in;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*---Button---*/
@@ -181,9 +182,67 @@ background: linear-gradient(to left, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Fi
 .one {
     -webkit-clip-path: circle(0% at 100% 0);
     clip-path: circle(0% at 100% 0);
+background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 /*---End position at bottom left once menu btn is clicked---*/
 .two {
     -webkit-clip-path: circle(150% at 100% 0);
     clip-path: circle(150% at 100% 0);
+background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
+
+
+/*---Media queries----*/
+
+/*----1200px to 1024px----*/
+@media screen and (max-width:1024px){
+    .landing-imgs {
+        height: 400px;
+    }
+}
+/*----1024px to 900px----*/
+
+@media screen and (max-width:900px){
+    .landing-text h2 {
+        font-size: 30px;
+    }
+    .landing-text h4 {
+        font-size: 22px;
+    }
+    .logo {
+        font-size: 30px;
+    }
+}
+
+/*---900px to 768px----*/
+@media screen and (max-width:768px){
+    .landing-imgs {
+        height: 350px;
+    }
+}
+
+/*----480px-----*/
+@media screen and (max-width:480px){
+    .container {
+        width: 100;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .landing-imgs {
+        width: 100%;
+    }
+    .landing-text {
+     padding-top: 20px;
+     width: 100%;
+}
+}
+
+
+
