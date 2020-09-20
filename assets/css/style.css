@@ -31,15 +31,12 @@ nav {
  position: fixed;
  top: 20px;
  right: 20px;
+ display: flex !important;
+ justify-content: flex-start;
 }
 
 /*----Nav links-----*/
 
-nav a {
-  color: #fafafa;   
- text-decoration: none;  
- display: inline-block;
-  }
 
 .links {
    position: fixed;
@@ -53,12 +50,18 @@ nav a {
    flex-direction: column;
    width: 100%;
    transition:  all 1s ease;
+}
 
+nav a {
+    color: #fafafa;
+    text-decoration: none;
 }
 
 .menu {
    animation: right 1s ease-in; 
    z-index: 100;
+   color: #fafafa;
+   display: block;
 }
 
 /*-----Company Logo----*/
@@ -171,12 +174,16 @@ background: linear-gradient(to left, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Fi
 }
 }
 
-.one {
-    -webkit-clip-path: circle(0% at 0 0);
-    clip-path: circle(0% at 0 0);
-}
+/*---Used from Clippy- A css path maker --*/
 
+/*---Start position at top right once menu btn is clicked---*/
+
+.one {
+    -webkit-clip-path: circle(0% at 100% 0);
+    clip-path: circle(0% at 100% 0);
+}
+/*---End position at bottom left once menu btn is clicked---*/
 .two {
-    -webkit-clip-path: circle(150% at 0 0);
-    clip-path: circle(150% at 0 0);
+    -webkit-clip-path: circle(150% at 100% 0);
+    clip-path: circle(150% at 100% 0);
 }
