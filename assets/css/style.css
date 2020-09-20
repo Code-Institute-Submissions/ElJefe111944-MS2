@@ -5,6 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+/*-----Page 1-------*/
+/*-----Landing page-----*/
+
+/*---Entire page style----*/
 body {
     
     font-family: 'Open Sans', sans-serif;
@@ -12,13 +16,16 @@ body {
 
 header {
     font-family: 'Pathway Gothic One', sans-serif;
-background: #1e130c;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #9a8478, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #1e130c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #9a8478, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: auto;
     padding: 48px;
     width: 100%;
 }
+
+/*----Head of landing page---*/
+/*------Navigation Bar----*/
 
 nav {
  position: fixed;
@@ -26,19 +33,30 @@ nav {
  right: 20px;
 }
 
+/*----Nav links-----*/
+
 nav a {
   color: #fafafa;   
  text-decoration: none;  
  display: inline-block;
+ animation: right 1s ease-in;
  
 }
+
+/*-----Company Logo----*/
 
 .logo {
     color: #fafafa;
     font-family: 'Pathway Gothic One', sans-serif;
     font-size: 50px;
+     animation: left 1s ease-in;
 }
+/*---End of head of Landing page---*/
 
+/*---Center of landing page----*/
+
+/*---Container including text and images---*/
+/*----Main content----*/
 .container {
     width: 95% !important;
     max-width: 1200px !important;
@@ -48,23 +66,33 @@ nav a {
     justify-content: space-around;
     color: #fafafa;
 }
-
-.img1 {
+/*---Images at centre right of page---*/
+.landing-imgs {
     object-fit: cover;
     display: block;
     height: 450px;
     width: 22%;
+    animation: up 1s ease-in;
 }
+
+/*---Text at centre left of page ---*/
 .landing-text {
     text-align: center;
     width: 50%;
 } 
 .landing-text h2 {
-   font-size: 70px; 
+   font-size: 50px; 
+   animation: left 1s ease-in;
 }
 
-.landing-text h2 {
-   font-size: 50px; 
+.landing-text h4 {
+   font-size: 30px; 
+    animation: left 1s ease-in;
+}
+
+/*---Button---*/
+.btn-pg2 {
+   animation: up 1s ease-in; 
 }
 
 .landing-text a {
@@ -80,14 +108,47 @@ nav a {
     padding:  10px 0px;
 }
 
+/*---End of main content---*/
+
 .wave {
     height: 100px;
     width: 100%;
 background: #1e130c;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #9a8478, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+/*---Animations---*/
 
+@keyframes right {
+  0% {
+      opacity: 0;
+      transform: translateX(100px);
+  }
+100% {
+    opacity: 1;
+    transform: translateX(0);
+}
+}
 
+@keyframes left {
+  0% {
+      opacity: 0;
+      transform: translateX(-100px);
+  }
+100% {
+    opacity: 1;
+    transform: translateX(0);
+}
+}
 
+@keyframes up {
+  0% {
+      opacity: 0;
+      transform: translateY(100px);
+  }
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
 }
