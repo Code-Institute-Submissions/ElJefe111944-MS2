@@ -39,8 +39,26 @@ nav a {
   color: #fafafa;   
  text-decoration: none;  
  display: inline-block;
- animation: right 1s ease-in;
- 
+  }
+
+.links {
+   position: fixed;
+   display: flex;
+   top: 0;
+   background-color: #000;
+   justify-content: space-around;
+   align-items: center;
+   height: 100vh;
+   right: 0;
+   flex-direction: column;
+   width: 100%;
+   transition:  all 1s ease;
+
+}
+
+.menu {
+   animation: right 1s ease-in; 
+   z-index: 100;
 }
 
 /*-----Company Logo----*/
@@ -151,4 +169,14 @@ background: linear-gradient(to left, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Fi
     opacity: 1;
     transform: translateY(0);
 }
+}
+
+.one {
+    -webkit-clip-path: circle(0% at 0 0);
+    clip-path: circle(0% at 0 0);
+}
+
+.two {
+    -webkit-clip-path: circle(150% at 0 0);
+    clip-path: circle(150% at 0 0);
 }
