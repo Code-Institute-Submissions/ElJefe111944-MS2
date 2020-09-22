@@ -79,7 +79,7 @@ nav a {
 /*---Container including text and images---*/
 /*----Main content----*/
 .container {
-    width: 95% !important;
+    width: 100% !important;
     max-width: 1200px !important;
     display: flex;
     align-items: center;
@@ -89,8 +89,9 @@ nav a {
 }
 /*---Images at centre right of page---*/
 .slider-container {
-    width: 45%;
     overflow: hidden;
+    display: flex;
+    width: 100%;
 }
 
 .slides {
@@ -98,11 +99,19 @@ nav a {
     display: flex;
     height: 450px;
     animation: up 1s ease-in;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.slider-content {
+    flex-shrink: 0;
 }
 
 /*---Text at centre left of page ---*/
 .landing-text {
     text-align: center;
+    padding-right: 30px;
 } 
 .landing-text h2 {
    font-size: 40px; 
@@ -202,12 +211,46 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 
 }
 
+/*---Footer----*/
+.row {
+    width:100%;
+}
+
+footer {
+    background-color: #131212;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.quick-links {
+    display: grid;
+}
+div.col.quick-links a{
+    color: #fafafa;
+}
+
+.col-6.about-us {
+    text-align: center;
+}
+
+.social-media {
+    font-weight: 400;
+    font-size: 20px;
+    border: 1px solid #fafafa;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px !important;
+    border-radius: 50%;
+    margin: 10px 5px;
+}
+
 
 /*---Media queries----*/
 
 /*----1200px to 1024px----*/
 @media screen and (max-width:1024px){
-    .landing-imgs {
+    .slides {
         height: 400px;
     }
 }
@@ -227,7 +270,7 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 
 /*---900px to 768px----*/
 @media screen and (max-width:768px){
-    .landing-imgs {
+    .slides {
         height: 350px;
     }
 }
