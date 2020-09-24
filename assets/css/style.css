@@ -33,6 +33,7 @@ nav {
  right: 20px;
  display: flex !important;
  justify-content: flex-start;
+ z-index: 100000000;
 }
 
 /*----Nav links-----*/
@@ -50,6 +51,7 @@ nav {
    flex-direction: column;
    width: 100%;
    transition:  all 1s ease;
+   bottom: 0;
 }
 
 nav a {
@@ -88,30 +90,37 @@ nav a {
     color: #fafafa;
 }
 /*---Images at centre right of page---*/
-.slider-container {
+.landing-imgs {
+    display: grid;
+    grid-template-columns: auto auto auto;
     overflow: hidden;
-    display: flex;
-    width: 100%;
+    animation: right 1s ease-in;
+    height: 75vh;
 }
 
-.slides {
+.img-container {
+overflow: hidden;    
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    display: flex;
-    height: 450px;
-    animation: up 1s ease-in;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
 }
 
-.slider-content {
-    flex-shrink: 0;
+.img-container img:hover {
+    transform: scale(1.2);
 }
+
+
 
 /*---Text at centre left of page ---*/
 .landing-text {
     text-align: center;
     padding-right: 30px;
+    width: 80%;
 } 
 .landing-text h2 {
    font-size: 40px; 
@@ -223,13 +232,15 @@ footer {
 
 .quick-links {
     display: grid;
+     animation: up 1s ease-in; 
 }
-div.col.quick-links a{
+div.col-sm.quick-links a{
     color: #fafafa;
 }
 
-.col-6.about-us {
+.col-sm.about-us {
     text-align: center;
+    animation: up 1s ease-in; 
 }
 
 .social-media {
@@ -243,6 +254,10 @@ div.col.quick-links a{
     line-height: 40px !important;
     border-radius: 50%;
     margin: 10px 5px;
+}
+
+.contact-details {
+     animation: up 1s ease-in; 
 }
 
 
