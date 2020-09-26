@@ -15,3 +15,10 @@ modalFullImage.src = modalFullImageSrc;
 modalCaption.innerHTML = landingImage.alt;
     })
 })
+
+modal.addEventListener("click", (e) => {
+    if (e.target.classList.contains("modal-background")){
+        modal.classList.remove("appear");
+        modalFullImage.classList.remove("appear");
+    } 
+});
