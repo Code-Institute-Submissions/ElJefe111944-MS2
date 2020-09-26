@@ -153,6 +153,7 @@ span.modalCaption {
     bottom: 5%;
     transform: translate(-50%, -5%);
     font-size: 2.5rem;
+    text-align: center;
 }
 
 
@@ -330,6 +331,16 @@ div.col-sm.quick-links a{
         height: 350px;
     }
 }
+@media screen and (max-width:700px){
+    .modalFullImage {
+        height: auto;
+        width: 100%;
+    }
+    .modalCaption {
+        font-size: 1.5rem;
+    }
+}
+
 
 /*----480px-----*/
 @media screen and (max-width:480px){
@@ -346,6 +357,9 @@ div.col-sm.quick-links a{
      width: 100%;
      padding-right: 0px;
 }
+   .modalCaption {
+       font-size: 1rem;
+   }
 }
 
 
