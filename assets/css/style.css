@@ -36,6 +36,11 @@ nav {
  z-index: 100000000;
 }
 
+.shoppingCartIcon {
+    padding-right: 20px;
+    color: #fafafa;
+}
+
 /*----Nav links-----*/
 
 
@@ -62,9 +67,27 @@ nav a {
 .menu {
    animation: right 1s ease-in; 
    z-index: 100;
-   color: #fafafa;
+   color: #000;
    display: block;
 }
+
+.shoppingCartIcon {
+    padding-right: 22px;
+    color: #000;
+    animation: right 1s ease-in;
+}
+
+.shoppingCartIcon p {
+    position: absolute;
+    font-size: 0.7rem;
+    background-color: #000;
+    color: #fafafa;
+    border-radius: 50%;
+    padding: 5px 9px;
+    top: -15px;
+    left: 14px;
+}
+
 
 /*-----Company Logo----*/
 
@@ -268,6 +291,7 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
     font-family: 'Pathway Gothic One', sans-serif;
     font-size: 50px;
      animation: left 1s ease-in;
+     padding-bottom: 20px;
 }
 
 
@@ -277,6 +301,16 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
     height: auto;
     padding: 48px;
     width: 100%;
+}
+
+.row.row-cols-1.row-cols-md-2 {
+    animation: right 1s ease-in;
+}
+
+.wave-normal {
+    height: 100px;
+    width: 100%;
+background: #fafafa;  
 }
 
 
