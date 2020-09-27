@@ -261,6 +261,24 @@ background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-2
 background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+/*---End of Landing Page---*/
+/*---Page 1/Sofas.html----*/
+.logo-normal {
+    color: #462b2b;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 50px;
+     animation: left 1s ease-in;
+}
+
+
+.header-normal {
+    font-family: 'Pathway Gothic One', sans-serif;
+   background: #fafafa;
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+
 
 /*---Footer----*/
 .row {
