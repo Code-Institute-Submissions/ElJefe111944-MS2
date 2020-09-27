@@ -75,6 +75,7 @@ nav a {
     padding-right: 22px;
     color: #000;
     animation: right 1s ease-in;
+    cursor: pointer; 
 }
 
 .shoppingCartIcon p {
@@ -312,7 +313,51 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
     width: 100%;
 background: #fafafa;  
 }
+/*----Shopping Cart----*/
+.shoppingCart {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.95);
+        z-index: 111111111;
+         transition: 0.3s linear;
+ transform: scale(0);
+}
 
+.shoppingCart.open {
+    transform: scale(1);
+}
+
+.shoppingCart .basket {
+ position: relative;
+ height: 60%;
+ width: 80%;
+ background: #fafafa;
+ display: flex;
+ flex-direction: column;
+ align-items: center; 
+}
+
+.shoppingCart .basket i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px;
+    color: #462b2b;
+    cursor: pointer;
+}
+
+.shoppingCart .basket h1 {
+  position: relative;
+  margin-top: 5%;
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: #462b2b;
+}
 
 /*---Footer----*/
 .row {
