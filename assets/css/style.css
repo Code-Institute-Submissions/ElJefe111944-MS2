@@ -48,7 +48,7 @@ nav {
    position: fixed;
    display: flex;
    top: 0;
-   background-color: #000;
+   background-color: #fafafa;
    justify-content: space-around;
    align-items: center;
    height: 100vh;
@@ -60,7 +60,7 @@ nav {
 }
 
 nav a {
-    color: #fafafa;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -270,9 +270,7 @@ background: linear-gradient(to left, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Fi
 .one {
     -webkit-clip-path: circle(0% at 100% 0);
     clip-path: circle(0% at 100% 0);
-background: #232526;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 
 
 }
@@ -280,9 +278,8 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 .two {
     -webkit-clip-path: circle(150% at 100% 0);
     clip-path: circle(150% at 100% 0);
-background: #232526;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #fafafa;
+
 
 }
 /*---End of Landing Page---*/
@@ -341,6 +338,7 @@ background: #fafafa;
  display: flex;
  flex-direction: column;
  align-items: center; 
+ overflow-y: scroll;
 }
 
 .shoppingCart .basket i {
@@ -358,6 +356,28 @@ background: #fafafa;
   font-family: 'Pathway Gothic One', sans-serif;
   color: #462b2b;
 }
+/*---Shopping Cart table ---*/
+table {
+    width: 100%;
+}
+
+th {
+    text-align: center;
+    justify-content: center;
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+}
+
+button.btn.btn-danger {
+    background-color: #462b2b;
+    border-color: #462b2b;
+}
+
 
 /*---Footer----*/
 .row {

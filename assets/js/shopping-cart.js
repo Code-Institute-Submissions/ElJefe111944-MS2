@@ -10,7 +10,7 @@ window.onload = function(){
    cartCloseBtn.addEventListener("click", function (){
       shoppingCart.classList.remove('open');
    })
-};
+
 
 // Adding product selected by user to local storage.
 const addToShoppingCartBtn = document.getElementsByClassName('addToShoppingCartBtn')
@@ -53,13 +53,38 @@ const localItems = JSON.parse(localStorage.getItem("items"));
 		});
 	}
 // shoppingCartIcon updated with number of items selected.
-const shoppingCartIcon = document.querySelector('.shoppingCartIcon p');
+const shoppingCartIconNumber = document.querySelector('.shoppingCartIcon p');
 let no = 0;
 JSON.parse(localStorage.getItem('items')).map(data=> {
-     no = no+data.no
-     shoppingCartIcon.textContent = no;
+     no = no+data.no    
 
 });
+ shoppingCartIconNumber.textContent = no;
+// Adding items to the table in the class shoppingCart to be displayed to the user
+const shoppingCartTable = shoppingCart.querySelector('table');
+// Create string to recieve item information selected 
+let itemSelected = '';
+// Data to go inside empty string
+itemSelected += '<tr><th>Item Number</th><th>Item Name</th><th>Item Price</th><th></th></tr>';
+
+// Condition if no items have been selcted and the Shopping Cart is empty
+if (JSON.parse(localStorage.getItem('items')) === null) {
+    itemSelected += '<tr><td colspan="4">Your shopping cart is empty</td></tr>';
+// Condition for if items have been selected and to be displayed in the Shopping Cart
+} else {
+
+   JSON.parse(localStorage.getItem('items')).map(data=>{
+    itemSelected += '<tr><th>'+data.id+'</th><th>'+data.name+'</th><th>€'+data.price+'</th><th><button type="button" class="btn btn-danger" onclick=Delete(this); >Remove</button></th><tr>';
+    });
+
+ 
+}
+
+    shoppingCartTable.innerHTML = itemSelected;
+};
+
+
+
 
 
 
