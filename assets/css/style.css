@@ -99,6 +99,7 @@ nav a {
     font-size: 50px;
      animation: left 1s ease-in;
      padding: 15px;
+     text-align: left;
 }
 /*---End of head of Landing page---*/
 
@@ -292,6 +293,7 @@ background: #fafafa;
     font-size: 50px;
      animation: left 1s ease-in;
      padding-bottom: 20px;
+     text-align: left;
 }
 
 
@@ -332,6 +334,7 @@ background: #fafafa;
     font-size: 50px;
      animation: left 1s ease-in;
      padding: 35px;
+     text-align: left;
 }
 
 
