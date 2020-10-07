@@ -487,7 +487,14 @@ width: 50%;
 input:focus~.bar::before {
   width: 100%;
 }
-
+/*---Error message when the input is not valid---*/
+.warnings {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #fafafa;
+    padding-top: 20px;
+}
 
 /*----Shopping Cart----*/
 .shoppingCart {
