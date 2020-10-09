@@ -7,26 +7,26 @@ const errorMessage = document.getElementById('warnings');
 form.addEventListener("submit", e=>{
     e.preventDefault()
     let warnings = ""
-    let entrar = false
+    let enter = false
     var emailValidator = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/; 
     errorMessage.innerHTML = ""
     
     if (name.value.length < 3){
         warnings += 'Invalid Name <br>'
-          entrar = true
+          enter = true
     }   
      
     if (!emailValidator.test(email.value)){
         warnings += "Invalid Email <br>"
-        entrar = true
+        enter = true
     }
     if(message.value.length <= 10){
         warnings += "Please Enter More Than 10 Characters<br>"
-        entrar = true
+        enter = true
     }
-    if (entrar){
+    if (enter){
         errorMessage.innerHTML = warnings;
     } else {
-        errorMessage.innerHTML = 'Sent'
+        errorMessage.innerHTML = 'Your Message Has Been Sent'
     }
 })
