@@ -343,14 +343,14 @@ background: #fafafa;
     height: 90vh;
     overflow: hidden;
     margin: auto;
-    background: url('../images/testa.jpg');
+    background: url('../images/testa.jpg');    
 }
 
 .slider-container {
     display: flex;
     height: 100%;
     width: 100%;
-    align-items: center;
+    align-items: center;    
 }
 
 .reviews {
@@ -367,6 +367,7 @@ background: #fafafa;
 .review-name {
     color: #fafafa;
     text-align: center;
+    animation: left 1s ease-in;
 }
 
 #review-img {
@@ -377,12 +378,20 @@ background: #fafafa;
     width: 150px;
     object-fit: cover;
     border-radius: 100%;
+    animation: left 1s ease-in;
 }
 .review {
     text-align: center;
     font-style: italic;
     color: #fafafa;
     font-size: 1.2rem;
+    animation: left 1s ease-in;
+}
+
+.wave-reviews {
+    height: 100px;
+    width: 100%;
+background: #fafafa;
 }
 
 /*---Contact Us------*/
@@ -425,7 +434,7 @@ form {
     margin: 45px;
 }
 
-input {
+input, textarea {
     background: none;
     color: gray;
     font-size: 18px !important;
@@ -436,7 +445,7 @@ input {
     border-bottom: 2px solid#ababab;
 }
 
-input:focus {
+input:focus, textarea:focus {
     outline: none;
     color: #fafafa;   
 }
@@ -454,10 +463,11 @@ label {
 }
 
 input:focus~label,
-input:valid~label {
+input:valid~label,
+textarea:focus~label, textarea:valid~label {
     top: -14px;
     font-size: 12px;
-    color: #2196f3;
+    color: #fafafa;
 }
 
 
@@ -484,7 +494,8 @@ width: 50%;
     left: 0;
 }
 
-input:focus~.bar::before {
+input:focus~.bar::before,
+ textarea:focus~.bar::before {
   width: 100%;
 }
 /*---Error message when the input is not valid---*/
