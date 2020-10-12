@@ -49,9 +49,24 @@ nav {
  font-size: 22px;
 }
 
+a#menu:hover {
+    color: #00b4db;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #00b4db;
+    text-decoration: none;
+}
+
 .shoppingCartIcon {
     padding-right: 20px;
     color: #fafafa;
+}
+
+.shoppingCartIcon:hover {
+    color: #00b4db;
+    text-decoration: none;
 }
 
 /*----Nav links-----*/
