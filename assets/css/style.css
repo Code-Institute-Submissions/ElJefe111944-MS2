@@ -656,6 +656,14 @@ div.col-sm.quick-links a{
     .slides {
         height: 350px;
     }
+    .landing-imgs {
+    display: grid;
+    grid-template-columns: none;
+    overflow: hidden;
+    animation: right 1s ease-in;
+    height: 80vh;
+    grid-row-gap: 0.4rem;
+   }
 }
 @media screen and (max-width:700px){
     .modalFullImage {
