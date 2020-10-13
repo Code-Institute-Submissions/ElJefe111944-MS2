@@ -526,7 +526,7 @@ input:focus~.bar::before,
   width: 100%;
 }
 /*---Error message when the input is not valid---*/
-.warnings {
+.messageError, .sent, .nameError, .emailError {
     width: 200px;
     text-align: center;
     margin: auto;

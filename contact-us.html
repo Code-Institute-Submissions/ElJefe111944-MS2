@@ -59,20 +59,24 @@
 	<form action="" method="POST" id="form">
 		<div class="form">
 			<h1>Contact Us</h1>
+            <p class="sent" id="sent"></p>
 			<div class="form-group">
 				<input type="text" name="" id="name" ><span class="bar"></span>
 				<label for="">Name</label>
+                <p class="nameError" id="nameError"></p>
 			</div>
             <div class="form-group">
 				<input type="email" name="" id="email" ><span class="bar"></span>
 				<label for="">Email</label>
+                <p class="emailError" id="emailError"></p>
 			</div>
             <div class="form-group">
 				<textarea name="" id="message"  rows="4"></textarea> <span class="bar"></span>
-				<label for="">Message</label>                
+				<label for="">Message</label>
+                <p class="messageError" id="messageError"></p>                
 			</div>
             <button class="btn btn-primary" type="submit">Button</button>
-		    <p class="warnings" id="warnings"></p>
+		    
         </div>
 	</form>
 	
