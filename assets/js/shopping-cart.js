@@ -80,7 +80,7 @@ if (JSON.parse(localStorage.getItem('items')) === null) {
  
 }
 
-    shoppingCartTable.innerHTML = itemSelected;
+    shoppingCartTable.innerHTML = itemSelected;    
 };
 
 

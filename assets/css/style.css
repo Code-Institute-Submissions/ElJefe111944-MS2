@@ -40,7 +40,7 @@ header {
 /*------Navigation Bar----*/
 
 nav {
- position: fixed;
+ position: absolute;
  top: 20px;
  right: 20px;
  display: flex !important;
@@ -66,6 +66,11 @@ a#menu:hover {
 
 .shoppingCartIcon:hover {
     color: #00b4db;
+    text-decoration: none;
+}
+
+.shoppingCartIcon p:hover {
+    background-color: #00b4db;
     text-decoration: none;
 }
 
@@ -366,7 +371,7 @@ background: #fafafa;
 
 
 .container-reviews {
-    width: 100%;
+    width: 95%;
     height: 90vh;
     overflow: hidden;
     margin: auto;
@@ -377,7 +382,12 @@ background: #fafafa;
     display: flex;
     height: 100%;
     width: 100%;
-    align-items: center;    
+    align-items: center; 
+    border-radius: 10px;   
+}
+
+.slider-container input {
+    display: none;
 }
 
 .reviews {
@@ -414,6 +424,8 @@ background: #fafafa;
     font-size: 1.2rem;
     animation: left 1s ease-in;
 }
+
+
 
 .wave-reviews {
     height: 100px;
@@ -614,6 +626,10 @@ footer {
     font-family: 'Open Sans', sans-serif;
 }
 
+.col-sm.quick-links {
+    text-align: left;
+}
+
 .quick-links {
     display: grid;
      animation: up 1s ease-in; 
@@ -644,6 +660,9 @@ div.col-sm.quick-links a{
      animation: up 1s ease-in; 
 }
 
+.col-sm.contact-details {
+    text-align: right;
+}
 
 /*---Media queries----*/
 
