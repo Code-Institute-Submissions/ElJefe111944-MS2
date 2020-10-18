@@ -634,6 +634,13 @@ footer {
     display: grid;
      animation: up 1s ease-in; 
 }
+
+
+div.col-sm.quick-links a:hover {
+    color: #00b4db;
+    text-decoration: none;
+}
+
 div.col-sm.quick-links a{
     color: #fafafa;
 }
