@@ -661,6 +661,12 @@ div.col-sm.quick-links a{
     line-height: 40px !important;
     border-radius: 50%;
     margin: 10px 5px;
+    color: #fafafa;
+}
+
+i.social-media:hover {
+    color: #00b4db;
+     border: 1px solid #00b4db;
 }
 
 .contact-details {
