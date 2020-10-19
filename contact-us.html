@@ -27,6 +27,32 @@
 	        window.location.reload();
 	    }	
 	</script>
+    <script src="//cdn.conveythis.com/javascript/55/conveythis.js"></script>
+<script src="//cdn.conveythis.com/javascript/55/translate.js"></script>
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(e) {
+		conveythis.init({
+			icon: "rect",
+			text: "full-text",
+			positionTop: null,
+			positionBottom: 0,
+			positionLeft: null,
+			positionRight: 0,
+			change: {},
+			languages: [{"id":730,"active":false},{"id":703,"active":true}],
+			api_key: "pub_9b1066115dbbec306c3d5b4d23859710",
+			source_language_id: 703,
+			auto_translate: 0,
+			hide_conveythis_logo: 0,
+			translate_media: 0,
+			translate_document: 0,
+			change_direction: 0,
+						
+		} );
+	} );
+		
+</script>
+
 </head>
 <div id="preLoader">
 
@@ -35,7 +61,9 @@
 
 <header class="header-reviews">
 	<!---Company Logo-->
-	<h2 class="logo-reviews">Sonnenaufgang</h2>
+	<a href="index.html">
+		<h2 class="logo-reviews">Sonnenaufgang</h2>
+	</a>
 	<!---Nav Bar-->
 	<nav>
 		<div class="shoppingCartIcon">
@@ -75,7 +103,7 @@
 				<label for="">Message</label>
                 <p class="messageError" id="messageError"></p>                
 			</div>
-            <button class="btn btn-primary" type="submit">Button</button>
+            <button class="btn btn-primary" type="submit">Send Message</button>
 		    
         </div>
 	</form>
@@ -106,29 +134,33 @@
     <script src="../assets/js/preloader.js"></script>
 </body>
 <footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm quick-links">
-				<h4>Menu</h4>
-				<a href="">Home</a>
-				<a href="">Page 1</a>
-				<a href="">Page 1</a>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm quick-links">
+					<h4>Menu</h4>
+					<a href="index.html">Home</a>
+					<a href="sofas.html">Our Sofas</a>
+					<a href="reviews.html">Reviews</a>
+                    <a href="contact-us.html">Contact Us</a>
 			</div>
-			<div class="col-sm about-us">
-				<h4>About Us</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-				<i class="fab fa-facebook-f social-media"></i>
-				<i class="fab fa-twitter social-media"></i>
-				<i class="fab fa-instagram social-media"></i>
-				<i class="fab fa-youtube social-media"></i>
-				<i class="fab fa-linkedin-in social-media"></i>
-
+				<div class="col-sm about-us">
+					<h4>About Us</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+						et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f social-media"></i></a>
+                    <a href="https://twitter.com/explore" target="_blank"><i class="fab fa-twitter social-media"></i></a>	
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram social-media"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube social-media"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in social-media"></i></a>
+	
+				</div>
+				<div class="col-sm contact-details">
+					<h4>Contact Us</h4>
+                    <p><i class="fas fa-phone contact-icons"></i>+49 30 901820</p>
+                    <p><i class="fas fa-map-marker-alt contact-icons"></i>Marienplatz<br>München<br>80331<br>Germany</p>
+                   
+				</div>
 			</div>
-			<div class="col-sm contact-details">
-				<h4>Contact Us</h4>
-			</div>
-		</div>
-</footer>
+	</footer>
 
 </html>
