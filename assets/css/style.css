@@ -219,7 +219,7 @@ span.modalCaption {
     left: 50%;
     bottom: 5%;
     transform: translate(-50%, -5%);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -231,16 +231,14 @@ span.modalCaption {
     padding-right: 30px;
     width: 80%;
 } 
-.landing-text h2 {
-   font-size: 40px; 
-   animation: left 1s ease-in;
-   font-family: 'Open Sans', sans-serif;
+.landing-text h3 {    
+   animation: left 1s ease-in;   
+   font-size: 2rem;
 }
 
-.landing-text h4 {
-   font-size: 25px; 
-    animation: left 1s ease-in;
-    font-family: 'Open Sans', sans-serif;
+.landing-text h5 {
+    animation: left 1s ease-in; 
+    font-size: 1.75rem;   
 }
 
 /*---Button---*/
@@ -259,6 +257,12 @@ span.modalCaption {
     border-radius: 3px;
     text-align: center;
     padding:  10px 0px;
+}
+a.btn-pg2:hover {
+    text-decoration: none;
+    color: #000;
+    background-color: #00b4db;
+    border: 1px solid #00b4db; 
 }
 
 /*---End of main content---*/
@@ -701,12 +705,6 @@ i.contact-icons {
 /*----1024px to 900px----*/
 
 @media screen and (max-width:900px){
-    .landing-text h2 {
-        font-size: 30px;
-    }
-    .landing-text h4 {
-        font-size: 22px;
-    }
     .logo {
         font-size: 30px;
     }
@@ -748,7 +746,6 @@ i.contact-icons {
 }
 
 
-
 /*----480px-----*/
 @media screen and (max-width:480px){
     .container {
@@ -767,6 +764,15 @@ i.contact-icons {
    .modalCaption {
        font-size: 1rem;
    }
+}
+
+@media screen and (max-width:375px){
+    .landing-text h3 {
+        font-size: 1.5rem;
+    }
+    .landing-text h5 {
+        font-size: 1.25rem;
+    }
 }
 
 
