@@ -13,6 +13,7 @@ body {
     
     font-family: 'Open Sans', sans-serif;
     text-align: center !important;
+    background-color: #fafafa !important;
 }
 
 header {
@@ -244,7 +245,7 @@ span.modalCaption {
 /*---Button---*/
 .btn-pg2 {
    animation: up 1s ease-in; 
-}
+ }
 
 .landing-text a {
     display: inline-block;
@@ -262,7 +263,7 @@ a.btn-pg2:hover {
     text-decoration: none;
     color: #000;
     background-color: #00b4db;
-    border: 1px solid #00b4db; 
+    border: none; 
 }
 
 /*---End of main content---*/
@@ -429,6 +430,39 @@ background: #fafafa;
     border-radius: 100%;
     animation: left 1s ease-in;
 }
+#review-img2 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+    animation: left 1s ease-in;
+}
+
+#review-img3 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+    animation: left 1s ease-in;
+}
+
+#review-img4 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+    animation: left 1s ease-in;
+}
+
 .review {
     text-align: center;
     font-style: italic;
@@ -447,7 +481,7 @@ background: #fafafa;
 
 /*---Contact Us------*/
 
-.contact-us-background {
+section.contact-us-background {
     background: #1e130c;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #9a8478, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -455,6 +489,7 @@ background: #fafafa;
     color: #462b2b;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 form {
@@ -464,8 +499,7 @@ form {
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 0 6px rgba(255,255,255,0.8);
-    border-radius: 10px;
-    margin-top: 30px;
+    border-radius: 10px;    
     animation: left 1s ease-in;
 }
 
@@ -749,7 +783,7 @@ i.contact-icons {
 /*----480px-----*/
 @media screen and (max-width:480px){
     .container {
-        width: 100;
+        width: 100%;
         flex-wrap: wrap-reverse;
         justify-content: center;
     }
