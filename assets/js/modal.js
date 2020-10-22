@@ -13,8 +13,8 @@ landingImages.forEach((landingImage) => {
 const modalFullImageSrc = landingImage.getAttribute("data-original");
 modalFullImage.src = modalFullImageSrc;
 modalCaption.innerHTML = landingImage.alt;
-    })
-})
+    });
+});
 
 modal.addEventListener("click", (e) => {
     if (e.target.classList.contains("modal-background")){

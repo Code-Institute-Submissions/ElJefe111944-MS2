@@ -6,11 +6,11 @@ let interval = 3000;
 
 window.addEventListener("resize", function(){
     sizeWidth = eachSlide[0].clientWidth;
-})
+});
 
 setInterval(function time (){
     slides();
-}, interval)
+}, interval);
 
 function slides(){
     slider.style.transform = 'translate(' + (- sizeWidth * count) + 'px';
@@ -22,6 +22,7 @@ function slides(){
     setInterval(function(){
       slider.style.transform = 'translate(' + (- sizeWidth * count) + 'px';
       slider.style.transition = 'tranform 5s';  
-    }, interval)
+    }, interval);
     }
 }
+

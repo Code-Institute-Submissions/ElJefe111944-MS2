@@ -9,11 +9,11 @@ window.onload = function(){
   });
    cartCloseBtn.addEventListener("click", function (){
       shoppingCart.classList.remove('open');
-   })
+   });
 
 
 // Adding product selected by user to local storage.
-const addToShoppingCartBtn = document.getElementsByClassName('addToShoppingCartBtn')
+const addToShoppingCartBtn = document.getElementsByClassName('addToShoppingCartBtn');
 let items = [];
 
 for (let i=0; i < addToShoppingCartBtn.length; i++){
@@ -56,7 +56,7 @@ const localItems = JSON.parse(localStorage.getItem("items"));
 const shoppingCartIconNumber = document.querySelector('.shoppingCartIcon p');
 let no = 0;
 JSON.parse(localStorage.getItem('items')).map(data=> {
-     no = no+data.no    
+     no = no+data.no;   
 
 });
  shoppingCartIconNumber.textContent = no;
@@ -68,7 +68,7 @@ let itemSelected = '';
 itemSelected += '<tr><th>Item Number</th><th>Item Name</th><th>Item Price</th><th></th></tr>';
 
 // Condition if no items have been selcted and the Shopping Cart is empty
-if (JSON.parse(localStorage.getItem('items')) === null) {
+if (JSON.parse(localStorage.getItem('items')) [0] === null) {
     itemSelected += '<tr><td colspan="4">Your shopping cart is empty</td></tr>';
 // Condition for if items have been selected and to be displayed in the Shopping Cart
 } else {
