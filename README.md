@@ -48,10 +48,6 @@ Once the user has decided on a sofa to their liking, the option is available to 
 
 To get in touch with an advisor to answer any queries they may have.
 
-*	*To view all website content in the desired language.*
-
-There are two language options provided so the content can be presented to the user in English or German.
-
 __How your project is the best way to help them achieve these things?__
 
 *   Sonnenaufgang’s website contains a sofas page available in both English and German providing the user with key information on the types of sofas instore. This is the interactive part of the website where six photos (one of each sofa) are displayed and the information of that sofa is available below the image. The purpose of this page is to allow the user to quickly view all the options available and obtain the key information necessary without having to scroll through pages and pages of items. Also enabling a possible comparison between items to help further aid their choice. 
@@ -61,9 +57,6 @@ __How your project is the best way to help them achieve these things?__
 *   The website has an entire page dedicated to helping the user with their decision on the type of Sofa that suits them. The page contains six pictures with information below and a button with the option of adding the corresponding sofa to a shopping cart. This page is where the user selects the sofa of their choice by adding the sofa to the shopping cart and completing the purchase.
 
 *   A contact us page enables the user to put in their name, email address and write a message where further information can be requested. Furthermore, the provider’s contact details such as a contact address and telephone number are provided if the user has any further inquiries.
-
-*   The language dropdown option allows the user to view the website content in either English or German. All information throughout the entire website is provide in both languages and can easily be selected in all screen sizes by the dropdown.
-
 
 Below are the links to the website wireframes. All wireframes were created using Balsamiq.
 
@@ -83,8 +76,6 @@ As mentioned in the previous section, this website contains several features whi
 __Existing Features__
 
 * *Navigation dropdown* – Situated at the top-right of each page of the website the navigation menu represented as a burger icon allows the user to access the pages most relevant to their needs with ease as well as providing an overview of the content available to the user on the other pages of the website. All the user has to do is to click on the links displayed in the navigation dropdown to browse the page of interest on the website.
-
-* *Language dropdown options* – The Language dropdown options located in the top left throughout the website. This allows the user to view the website content in either English or German. All information throughout the entire website is provide in both languages and can easily be selected in all screen sizes by the dropdown. The user selects the dropdown bar labelled with the current language and is presented with the two language options. Once they have clicked on the language desired the current page will reload with all text in the relevant language.
 
 * *Image Modal/Fluid image pop up* – Situated in the centre of the landing is a row of images. The three images provide the user with an insight into the different sofas available. When the user hovers over one of the images the image zooms in enabling the user to see the couch in more detail. The user can also click on one of the three images activating the image modal. The image modal provides a full screen view of the sofa of interest as well as information for the user to read.
 
@@ -140,10 +131,6 @@ __Software Development Platform:__
         This project was saved in GitHub as a repository using GitHub’s hosting services.
 
 __Other Tools:__
-
-* __Conveythis__ (https://www.conveythis.com/)
-
-   A website translation widget that was used to translate the content in this project to either German or English.
 
 * __Bennettfeely__ (https://bennettfeely.com/clippy/)
 
@@ -252,21 +239,7 @@ In this section, we will go over all of the user stories from the UX section and
      iv.	Try to submit the message by clicking the button labelled “Send Message” and a message will appear saying “Message Sent” so the user knows the process is complete.
      
      v.	This process can be repeated in mobile views. Please note, the link is in the navigation bar dropdown which can be activated by clicking on the burger icon at the top right-hand side of the page.
-
-*  *To view all website content in the desired language.*
-
-    i.	Go to the dropdown at the top left-hand side of the page labelled "Language" which is available on all pages.
-
-    ii.	Click on the box labelled “Language” to activate the dropdown.
-
-      iii.	Select one of the two language options available in the drop down which are either “English” or “German”.
-
-      iv.	Observer the transition of all content to the desired language.
-
-     v.	Revert back to the original language by repeating the process and selecting the alternative language option.
-
-     vi.	This process can be repeated in mobile views. Please note, the link is in the navigation bar dropdown which can be activated by clicking on the burger icon at the top right-hand side of the page.
-
+ 
 __Interesting bugs or problems__
 
 No major bugs or problems were encountered during the making of this project. Any issues that were encountered were only minor ones such as the mistyping of code and white spaces between elements.
