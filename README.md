@@ -1,6 +1,6 @@
 # Sonnenaufgang
 
-Sonnenaufgang is a prestigious family run Sofa designer based in Munich that has been trading since 1884. Sonnenaufgang has evolved over the last 100 years as one of the most famous Sofa specialists with a wide range of material, colours, design and sizes of Sofas. This website has been created to revolutionise the business by providing customers with the option to shop online instead of instore. Helping reach a wider variety of customers. Such a demands has become necessary during the recent Covid-19 Pandemic and this website enables Sonnenaufgang to compete with the larger intercontinental franchises.
+Sonnenaufgang is a prestigious family run Sofa designer based in Munich that has been trading since 1884. Sonnenaufgang has evolved over the last 100 years as one of the most famous Sofa specialists with a wide range of material, colours, design and sizes of Sofas. This website has been created to revolutionise the business by providing customers with the option to shop online instead of instore. Helping reach a wider variety of customers. Such demands have become necessary during the recent Covid-19 Pandemic and this website enables Sonnenaufgang to compete with the larger intercontinental franchises.
 #
 ![Responsive Design](assets/images/wireframes/response-design.jpg)
 
@@ -21,7 +21,7 @@ Sonnenaufgang are a family run Sofa specialists and designers based in the heart
 
 __Project Aim:__
 
-The main aim of this website is to showcase the Sofas available from Sonnenaufgang and to obtain customers from all over Europe. This website enables the customer to browse and purchase the Sofa of their choice without ever having to enter the shop. Making it safer for the customer during the Covid-19 pandemic while increasing the exposure of the Sonnenaufgang brand.
+The main aim of this website is to showcase the Sofas available from Sonnenaufgang and to attract potential customers from all over Europe. This website enables the customer to browse and purchase the Sofa of their choice without ever having to enter the shop. Making it safer for the customer during the Covid-19 pandemic while increasing the exposure of the Sonnenaufgang brand.
 
 ## __UX__
 
@@ -92,9 +92,9 @@ __Existing Features__
 
 * *Our sofas page* – The sofas page enables the user to find out more about each of the six sofas on offer as each image is accompanied by the name, information on the type of sofa and price. This not only allows the user to obtain all the information necessary in a short space of time but also provides a comparison between sofas helping them make their decision. The text presented below each image is clear, concise and not too long to avoid overwhelming the user with information. At the bottom of each image there is a button called add to cart allowing the user to select the sofa they would like to purchase.
 
-* *Shopping Cart* – At the top right of all the pages on the site is the shopping cart icon. The user can access this at any point while browsing through the site and can update the shopping cart by adding or removing items. When an item has been added the cart a number at the top of the shopping cart icon is updated to inform the user of how many items have been selected for purchasing. The user is also given a summary of the items selected such as item number, items name and the price when accessing the cart.
+* *Shopping Cart* – At the top right of all the pages on the site is the shopping cart icon. The user can access this at any point while browsing through the site and can update the shopping cart by adding or removing items. When an item has been added to the cart a number at the top of the shopping cart icon is updated to inform the user of how many items have been selected for purchasing. The user is also given a summary of the items selected such as item number, items name and the price when accessing the cart.
 
-* *About us section* – The about us section situated in the footer of each page and enables the user to learn about Sonnenaufgang. This is done by a small paragraph of text giving the user a brief summary of the background of the designers such as when they started and who runs the them.
+* *About us section* – The about us section is situated in the footer of each page and enables the user to learn about Sonnenaufgang. This is done by a small paragraph of text giving the user a brief summary of the background into the designers such as when they started and who runs the them.
 
 * *The reviews page* – An automatic slider runs through 4 slides over a background image at the centre of the page with a quote, the name of the person who made the review and their picture. This provides the user with an insight into the kind of feedback Sonnenaufgang has received from their existing customers. Reviews are now a central part of online shopping and this page allows the user to gage customer satisfaction for the designers without ever entering one of the stores.
 
@@ -155,7 +155,7 @@ __Other Tools:__
 
 * __Icons8__ (https://icons8.com/preloaders/)
 
-    The Preloader Gif library was used in this project to select a Gig to be activated while the main content is being loaded.
+    The Preloader Gif library was used in this project to select a Gif to be activated while the main content is being loaded.
 
 * __Font Awsome__ (https://fontawesome.com/)
 
@@ -179,7 +179,7 @@ __Other Tools:__
 
 ## __Testing__
 
-The following Web Development tools were used for this project for testing, debugging and optimising different variation of CSS. The Web Developer tools were also used to view the layout and structure of the website through different devices and to test the behaviour of the website on standard screen sizes to cover all media devices.
+The following Web Development tools were used for this project for testing, debugging and optimising different variation of HTML, CSS and JavaScript. The Web Developer tools were also used to view the layout and structure of the website through different devices and to test the behaviour of the website on standard screen sizes to cover all media devices.
 *   Chrome Developer Tools
 *   DevTools (Firefox)
 *	CSS Validator (Jigsaw) 
@@ -237,7 +237,7 @@ In this section, we will go over all of the user stories from the UX section and
 
      ii.	Add items to the shopping cart by clicking on the button “add to shopping cart” at the bottom of each image on the “Our sofas” page.
      
-    iii.	Remove an item form the shopping cart by clicking on the button named “Remove” when inside the shopping cart 
+    iii.	Remove an item from the shopping cart by clicking on the button named “Remove” when inside the shopping cart 
      
     iv.	This process can be repeated in mobile views. Please note, the link is in the navigation bar dropdown which can be activated by clicking on the burger icon at the top right-hand side of the page.
 
